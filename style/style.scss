@@ -8,17 +8,22 @@
 body {
     width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
+    padding-top: 38px;
 }
 .wrapper{
-    width: 100%;
+    max-width: 1976px;
     height: 100%;
+    padding: 0 69px;
 
-    .container{
-        width: 1782px;
-        margin: 0 auto;
-
-        @media (max-width: 1440px) {
-            width: 1376px;
+    @media (max-width: 1440px) {
+        &{
+         padding: 0 32px;
         }
+     }
+    .container{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
     }
 }

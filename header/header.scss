@@ -5,5 +5,68 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .logo{
+        > img{
+            width: 231px;
+            height: 55.87px;
+        }
+    }
+    .header__nav{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .header__ul{
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .header__li{
+            margin: 0px 30px;
+
+            > a{
+            font-family: AM Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: #333334;
+            }
+        }
+    }
+    .header__btn{
+        width: 214.98px;
+        height: 54.47px;  
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        border: 3px solid #F42F2F;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 15px rgba(237, 202, 178, 0.54);
+        position: relative;
+        &::before{
+            content: '';
+            display: block;
+            left: -25px;
+            top: -25px;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            z-index: 1;
+            background-image: url(../images/icon/decor-1.png);
+            background-size: cover;
+        }
+        > a{
+            font-family: AM Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: #F42F2F;
+        }
+        
+    }
 }
 
