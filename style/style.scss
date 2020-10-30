@@ -1,6 +1,10 @@
 @import "./mixin";
 @import "./var";
 
+*{
+    @include default;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -12,7 +16,6 @@ body {
     .container{
         width: 1782px;
         margin: 0 auto;
-        background-color: red;
 
         @media (max-width: 1440px) {
             width: 1376px;
