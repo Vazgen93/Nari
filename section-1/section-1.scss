@@ -1,0 +1,116 @@
+@import "../style/style.scss";
+
+.section-1{
+    width: 100%;
+    height: 922px;
+    display: flex;
+    background-color: $background;
+    margin-bottom: 50px;
+
+    &__title{
+        height: 271px;
+        padding-top: 55px;
+        font-family: Monument Extended;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 45px;
+        letter-spacing: 0.09em;
+        color: $text-color-1;
+        position: relative;
+        &::before{
+            content: '';
+            display: block;
+            width: 25%;
+            height: 3px;
+            position: absolute;
+            background-color: $white;
+            bottom: 0;
+            left: -75px;
+            @media (max-width: 1440px){
+                &{
+                    width: 55%;
+    
+                }
+            }
+        }
+        
+        &-1{
+            position: absolute;  
+            left: -13px;
+        }
+        &-2{
+            font-size: 70px;  
+            position: absolute;  
+            left: 0px;
+            top: 71px;  
+        }
+
+    }
+    &__subtitle{
+        width: 100%;
+        display: flex;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        color: $white;
+        
+    }
+
+    &__btn{
+        width: 295.92px;
+        height: 71.4px;
+        background: $white;
+        transition: .3s;
+       
+        > a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 17px;
+            color: $btn-text-color;
+            transition: .3s;
+        }
+        &:hover{
+            background-color: $btn-text-color;
+        }
+        &:hover a{
+            color: $white;
+        }
+    }
+    
+    &__links{
+        padding-top: 100px;
+        > a{
+
+            font-size: 30px;
+            color: white;
+            margin: 0 19px;
+            transition: .3s;
+            &:first-child{
+                margin-left: 0;
+            }
+            &:hover{
+                color: $btn-text-color; 
+            }
+        }
+        
+    }
+
+    &__left{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 75px;
+    }
+    &__right{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
