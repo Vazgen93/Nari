@@ -6,7 +6,10 @@
     display: flex;
     background-color: $background;
     margin-bottom: 50px;
+<<<<<<< HEAD
     margin-top: 50px;
+=======
+>>>>>>> 38275b957054ab3cd165eab4df769ba878613836
 
     &__title{
         height: 271px;
@@ -30,10 +33,18 @@
             @media (max-width: 1440px){
                 &{
                     width: 55%;
+<<<<<<< HEAD
 
                 }
             }
         }
+=======
+    
+                }
+            }
+        }
+        
+>>>>>>> 38275b957054ab3cd165eab4df769ba878613836
         &-1{
             position: absolute;  
             left: -13px;
