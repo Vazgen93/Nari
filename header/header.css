@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: Monument Extended;
+  src: url(../fonts/MonumentExtended-Regular.otf);
+}
+
 * {
   text-decoration: none;
   list-style: none;
@@ -31,6 +37,10 @@ body {
   margin: 0 auto;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 header {
   width: 100%;
   display: -webkit-box;
@@ -51,59 +61,67 @@ header .logo > img {
 
 header .header__nav {
   width: 60%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 10px;
 }
 
 header .header__nav .header__ul {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 header .header__nav .header__li {
   margin: 0px 30px;
+  position: relative;
+}
+
+header .header__nav .header__li::before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: absolute;
+  background-color: #333334;
+  bottom: -3px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .header__nav .header__li:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 header .header__nav .header__li > a {
-  font-family: AM Montserrat;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
+  text-transform: uppercase;
   line-height: 20px;
   color: #333334;
 }
 
 header .header__btn {
-  width: 214.98px;
-  height: 54.47px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border: 3px solid #F42F2F;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 15px rgba(237, 202, 178, 0.54);
           box-shadow: 0px 4px 15px rgba(237, 202, 178, 0.54);
+  cursor: pointer;
   position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 header .header__btn::before {
@@ -119,12 +137,34 @@ header .header__btn::before {
   background-size: cover;
 }
 
+header .header__btn:hover {
+  background-color: #F42F2F;
+}
+
+header .header__btn:hover a {
+  color: #ffffff;
+}
+
 header .header__btn > a {
-  font-family: AM Montserrat;
+  width: 214.98px;
+  height: 54.47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
   color: #F42F2F;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 /*# sourceMappingURL=header.css.map */
