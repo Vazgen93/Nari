@@ -4,6 +4,16 @@
   src: url(../fonts/MonumentExtended-Regular.otf);
 }
 
+@font-face {
+  font-family: Monument Extended;
+  src: url(../fonts/MonumentExtended-Ultrabold.otf);
+}
+
+@font-face {
+  font-family: Serenity;
+  src: url(../fonts/Serenity.otf);
+}
+
 * {
   text-decoration: none;
   list-style: none;
