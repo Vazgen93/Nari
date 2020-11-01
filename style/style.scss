@@ -30,3 +30,57 @@ body {
 .bold{
     font-weight: bold;
 }
+.title{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &::before{
+        content: '';
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: $black;
+        margin-right: 32px;
+    }
+    .decor__font{
+        display: flex;
+        align-items: center;
+      >  span{
+            font-family: Serenity;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 104px;
+            line-height: 139.5%;
+            text-align: center;
+            letter-spacing: -0.02em;
+            color: $btn-text-color;
+            margin-right: 29px;
+        }
+        >p{
+           font-family: Monument Extended;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 35px;
+            line-height: 128.3%;
+            text-transform: capitalize;
+            color: #505050;
+        }
+    }
+    &__text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        p{
+            font-family: Monument Extended;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 35px;
+            line-height: 128.3%;
+            text-transform: capitalize;
+            color: #505050;
+        }
+    }
+
+}

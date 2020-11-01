@@ -50,4 +50,76 @@ body {
 .bold {
   font-weight: bold;
 }
+
+.title {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #000000;
+  margin-right: 32px;
+}
+
+.title .decor__font {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title .decor__font > span {
+  font-family: Serenity;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 104px;
+  line-height: 139.5%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ef7f6d;
+  margin-right: 29px;
+}
+
+.title .decor__font > p {
+  font-family: Monument Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 128.3%;
+  text-transform: capitalize;
+  color: #505050;
+}
+
+.title__text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title__text p {
+  font-family: Monument Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 128.3%;
+  text-transform: capitalize;
+  color: #505050;
+}
 /*# sourceMappingURL=style.css.map */
