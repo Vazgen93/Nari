@@ -6,9 +6,32 @@
         background: #FAFAFA;
         border: 2px solid #ECECEC;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        >p{
-
+        align-items: center;
+        height: 446px;
+        p{
+            font-family:Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 38px;
+            line-height: 46px;
+            text-align: center;
+            margin:0 22px;
+            &:nth-child(1){
+                color: #333334;
+            }
+            &:nth-child(2){
+                color: #111111;
+            }
+            span{
+                font-family: Monument Extended;
+                font-style: normal;
+                // font-weight: 100;
+                font-size: 46px;
+                line-height: 128.3%;
+                border: 0.2px solid #FFFFFF;
+            }
         }
     }
 }
