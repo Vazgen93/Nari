@@ -174,4 +174,53 @@ body {
 .green__text {
   color: #1ABC9C;
 }
-/*# sourceMappingURL=style.css.map */
+
+.section-3 {
+  background: blue;
+}
+
+.section-3__block1 {
+  background: #FAFAFA;
+  border: 2px solid #ECECEC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 446px;
+}
+
+.section-3__block1 p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  margin: 0 22px;
+}
+
+.section-3__block1 p:nth-child(1) {
+  color: #333334;
+}
+
+.section-3__block1 p:nth-child(2) {
+  color: #111111;
+}
+
+.section-3__block1 p span {
+  font-family: Monument Extended;
+  font-style: normal;
+  font-size: 46px;
+  line-height: 128.3%;
+  border: 0.2px solid #FFFFFF;
+}
+/*# sourceMappingURL=section-3.css.map */
