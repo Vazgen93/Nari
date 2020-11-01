@@ -1,0 +1,24 @@
+@import "../style/style.scss";
+
+.section-2{
+    width: 100%;
+    height: 1278px;
+    border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__coach{
+        width: 100%;
+        height: 533px;
+        box-shadow: 0px 10px 15px rgba(80, 80, 80, 0.08);
+    }
+    &__hola{
+        width: 100%;
+        height: 632px;
+        background-color: #FAFAFA;
+
+        &-text{
+            border: 1px solid red;
+        }
+    }
+}
