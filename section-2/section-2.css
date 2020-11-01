@@ -4,6 +4,16 @@
   src: url(../fonts/MonumentExtended-Regular.otf);
 }
 
+@font-face {
+  font-family: Monument Extended;
+  src: url(../fonts/MonumentExtended-Ultrabold.otf);
+}
+
+@font-face {
+  font-family: Serenity;
+  src: url(../fonts/Serenity.otf);
+}
+
 * {
   text-decoration: none;
   list-style: none;
@@ -41,6 +51,82 @@ body {
   font-weight: bold;
 }
 
+.title {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #000000;
+  margin-right: 32px;
+}
+
+.title .decor__font {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title .decor__font > span {
+  font-family: Serenity;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 104px;
+  line-height: 139.5%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ef7f6d;
+  margin-right: 29px;
+}
+
+.title .decor__font > p {
+  font-family: Monument Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 128.3%;
+  text-transform: capitalize;
+  color: #505050;
+}
+
+.title__text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 128px;
+  bottom: -50px;
+  position: absolute;
+}
+
+.title__text p {
+  font-family: Monument Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 128.3%;
+  text-transform: capitalize;
+  color: #505050;
+}
+
+p {
+  margin: 0;
+}
+
 .section-2 {
   width: 100%;
   height: 1278px;
@@ -68,9 +154,97 @@ body {
   width: 100%;
   height: 632px;
   background-color: #FAFAFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-2__hola-text {
-  border: 1px solid red;
+  width: 582px;
+  height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-2__hola-text > img {
+  width: 337.56px;
+}
+
+.section-2__hola-text > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 132%;
+  color: #111111;
+  margin: 0;
+}
+
+.section-2__hola-air {
+  width: 730px;
+  height: 470px;
+  background: linear-gradient(to right, #ef7f6d 0 587px, transparent 587px);
+  -webkit-transform: translateY(162px) translateX(100px);
+          transform: translateY(162px) translateX(100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.section-2__hola-air-title {
+  width: 256px;
+  height: 332px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 29px 0 0 39px;
+}
+
+.section-2__hola-air-title > img {
+  width: 240.59px;
+  height: 113.96px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.section-2__hola-air-title > p {
+  font-family: Serenity;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 77px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section-2__hola-air > img {
+  width: 461px;
+  height: 692px;
 }
 /*# sourceMappingURL=section-2.css.map */
