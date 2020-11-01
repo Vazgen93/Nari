@@ -1,0 +1,14 @@
+@import "../style/style.scss";
+
+.section-3{
+    background: blue;
+    &__block1{
+        background: #FAFAFA;
+        border: 2px solid #ECECEC;
+        display: flex;
+        justify-content: center;
+        >p{
+
+        }
+    }
+}

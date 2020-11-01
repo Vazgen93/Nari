@@ -123,146 +123,18 @@ body {
   color: #505050;
 }
 
-.section-1 {
-  width: 100%;
-  height: 922px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #f5b096;
-  margin-bottom: 50px;
-  margin-top: 50px;
+.section-3 {
+  background: blue;
 }
 
-.section-1__title {
-  height: 271px;
-  padding-top: 55px;
-  font-family: Monument Extended;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 45px;
-  letter-spacing: 0.09em;
-  color: #505050;
-  position: relative;
-}
-
-.section-1__title::before {
-  content: '';
-  display: block;
-  width: 25%;
-  height: 3px;
-  position: absolute;
-  background-color: #ffffff;
-  bottom: 0;
-  left: -75px;
-}
-
-@media (max-width: 1440px) {
-  .section-1__title::before {
-    width: 55%;
-  }
-}
-
-.section-1__title-1 {
-  position: absolute;
-  left: -13px;
-}
-
-.section-1__title-2 {
-  font-size: 70px;
-  position: absolute;
-  left: 0px;
-  top: 71px;
-}
-
-.section-1__subtitle {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  color: #ffffff;
-}
-
-.section-1__btn {
-  width: 295.92px;
-  height: 71.4px;
-  background: #ffffff;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.section-1__btn > a {
-  width: 100%;
-  height: 100%;
+.section-3__block1 {
+  background: #FAFAFA;
+  border: 2px solid #ECECEC;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  color: #ef7f6d;
-  -webkit-transition: .3s;
-  transition: .3s;
 }
-
-.section-1__btn:hover {
-  background-color: #ef7f6d;
-}
-
-.section-1__btn:hover a {
-  color: #ffffff;
-}
-
-.section-1__links {
-  padding-top: 100px;
-}
-
-.section-1__links > a {
-  font-size: 30px;
-  color: white;
-  margin: 0 19px;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.section-1__links > a:first-child {
-  margin-left: 0;
-}
-
-.section-1__links > a:hover {
-  color: #ef7f6d;
-}
-
-.section-1__left {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-left: 75px;
-}
-
-.section-1__right {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-/*# sourceMappingURL=section-1.css.map */
+/*# sourceMappingURL=section-3.css.map */
