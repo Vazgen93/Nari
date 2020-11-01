@@ -71,7 +71,10 @@ body {
     &__text{
         width: 100%;
         display: flex;
-        justify-content: center;
+        left: 128px;
+        bottom: -50px;
+        position: absolute;
+        
         p{
             font-family: Monument Extended;
             font-style: normal;
