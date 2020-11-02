@@ -13,7 +13,7 @@ p{
         box-shadow: 0px 10px 15px rgba(80, 80, 80, 0.08);
         margin-bottom:56px;
         &-text{
-            padding:0 185px 0 98px ;
+            padding:0  98px 58px  185px;
             &>p:first-child{
                 font-family:Montserrat;
                 font-style: normal;
@@ -108,6 +108,21 @@ p{
                 height: 692px;
             }
         }
-        @media (max-width:)
+    }
+}
+@media (max-width:1440px){
+    .section-2__coach-text{
+        padding:0  60px 28px  150px;
+    }
+    .section-2__title{
+        width: 80%;
+    }
+}
+@media (max-width:1020px){
+    .section-2__coach-text{
+        padding:0  20px 8px  80px;
+    }
+    .section-2__title{
+        width: 100%;
     }
 }
