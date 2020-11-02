@@ -28,6 +28,9 @@ footer{
                 line-height: 24px;
                 color: $white; 
             }
+            &>img{
+                cursor: pointer;
+            }
         }
         &>p{
             margin: 0;
@@ -67,4 +70,9 @@ footer{
             }  
         }
     }
+}
+@media (max-width:1020px){
+   .footer__social{
+       margin-top: 50px;
+   }
 }

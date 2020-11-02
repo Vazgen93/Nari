@@ -94,6 +94,11 @@ body {
         margin-top: 55px;         
     }
 }
+.bottom__line{
+    &::before{
+        margin-top: 120px;         
+    }
+}
 
 .left__block-img{
     width: 100%;
