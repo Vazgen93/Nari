@@ -29,6 +29,7 @@ body {
 }
 .bold{
     font-weight: bold;
+    
 }
 .title{
     width: 50%;
@@ -121,18 +122,30 @@ body {
     }
 }
 .osf{
+    height: 100%;
     display: flex;
+    align-items: flex-start;
+    margin: 0px 4px;
+   
     > span{
         display: block;
         width: 4px;
         height: 7px;
         background-image: url(../images/icon/Vector.png);
-        background-size: cover;
+        background-size: contain;
+    }
+}
+.osf__rotate{
+    transform: rotate(180deg);
+    
+    >span{
+        transform: translateY(20px);
     }
 }
 .green__text{
     color: $green-1;
 }
+
 
 .button__style{
     font-family: Montserrat;
@@ -145,5 +158,10 @@ body {
     align-items: center;
     a{
         color: #FAFAFA;
+    }
+
+    .pink__text{
+        font-weight: bold;
+        color: $btn-text-color;
     }
 }

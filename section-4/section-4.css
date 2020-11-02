@@ -1,3 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: Monument Extended;
+  src: url(../fonts/MonumentExtended-Regular.otf);
+}
+
+@font-face {
+  font-family: Monument Extended;
+  src: url(../fonts/MonumentExtended-Ultrabold.otf);
+}
+
+@font-face {
+  font-family: Serenity;
+  src: url(../fonts/Serenity.otf);
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-top: 38px;
+}
+
+.wrapper {
+  max-width: 1976px;
+  height: 100%;
+  padding: 0 69px;
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+}
+
+.wrapper .container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.title {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #000000;
+  margin-right: 32px;
+}
+
+.title .decor__font {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title .decor__font > span {
+  font-family: Serenity;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 104px;
+  line-height: 139.5%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ef7f6d;
+  margin-right: 29px;
+}
+
+.title .decor__font > p {
+  font-family: Monument Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 128.3%;
+  text-transform: capitalize;
+  color: #505050;
+}
+
+.title__text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 128px;
+  bottom: -50px;
+  position: absolute;
+}
+
+.title__text p {
+  font-family: Monument Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 128.3%;
+  text-transform: capitalize;
+  color: #505050;
+}
+
+.center__line::before {
+  margin-top: 55px;
+}
+
+.left__block-img {
+  width: 100%;
+  height: 971px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.left__block-img::before {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 722px;
+  background-color: #f5b096;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.left__block-img > img {
+  width: 537px;
+  height: 971px;
+  z-index: 1;
+}
+
+.osf {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0px 4px;
+}
+
+.osf > span {
+  display: block;
+  width: 4px;
+  height: 7px;
+  background-image: url(../images/icon/Vector.png);
+  background-size: contain;
+}
+
+.osf__rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.osf__rotate > span {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.green__text {
+  color: #1ABC9C;
+}
+
 .section-4 {
   width: 100%;
   display: -webkit-box;
@@ -7,6 +199,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .section-4__content {
@@ -37,9 +230,22 @@
           justify-content: flex-end;
 }
 
+.section-4__right .span {
+  margin: 0px 5px;
+}
+
 .section-4 .right__top {
   width: 100%;
-  height: 357px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 10px 40px rgba(80, 80, 80, 0.08);
           box-shadow: 0px 10px 40px rgba(80, 80, 80, 0.08);
@@ -48,9 +254,19 @@
 
 .section-4 .right__bottom {
   width: 100%;
-  height: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 36px;
   background: #FAFAFA;
+  padding: 32px 35px;
 }
 
 .section-4 .right__title {
@@ -58,5 +274,47 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #505050;
+}
+
+@media (max-width: 1440px) {
+  .section-4 .right__title {
+    font-size: 14px;
+  }
+}
+
+.section-4 .span {
+  margin: 0pa 5px;
+}
+
+.section-4 .right__desc > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.02em;
+  color: #333334;
+}
+
+@media (max-width: 1440px) {
+  .section-4 .right__desc > p {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=section-4.css.map */

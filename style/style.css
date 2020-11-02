@@ -158,9 +158,14 @@ body {
 }
 
 .osf {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0px 4px;
 }
 
 .osf > span {
@@ -168,7 +173,17 @@ body {
   width: 4px;
   height: 7px;
   background-image: url(../images/icon/Vector.png);
-  background-size: cover;
+  background-size: contain;
+}
+
+.osf__rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.osf__rotate > span {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
 }
 
 .green__text {
@@ -194,5 +209,10 @@ body {
 
 .button__style a {
   color: #FAFAFA;
+}
+
+.button__style .pink__text {
+  font-weight: bold;
+  color: #ef7f6d;
 }
 /*# sourceMappingURL=style.css.map */
