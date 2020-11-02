@@ -52,7 +52,7 @@ body {
 }
 
 .title {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,9 +99,26 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
-  line-height: 128.3%;
   text-transform: capitalize;
   color: #505050;
+}
+
+.title .decor__font .decor__font-green {
+  color: #1ABC9C;
+}
+
+.title .decor__font .air {
+  width: 209px;
+  height: 99px;
+  position: absolute;
+  top: 50%;
+  right: 35%;
+}
+
+@media (max-width: 1440px) {
+  .title .decor__font .air {
+    right: 5%;
+  }
 }
 
 .title__text {
@@ -114,12 +131,11 @@ body {
   position: absolute;
 }
 
-.title__text p {
+.title__text > p {
   font-family: Monument Extended;
   font-style: normal;
   font-weight: normal;
-  font-size: 35px;
-  line-height: 128.3%;
+  font-size: 40px;
   text-transform: capitalize;
   color: #505050;
 }
@@ -157,16 +173,22 @@ body {
   z-index: 1;
 }
 
+<<<<<<< HEAD
 .osf {
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 =======
+=======
+.right__img {
+  width: 100%;
+>>>>>>> Avenger
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -208,21 +230,55 @@ body {
   color: #FAFAFA;
 =======
   background-size: contain;
+=======
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
 }
 
-.osf__rotate {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.right__img > img {
+  height: 100%;
+  position: absolute;
+  bottom: -50px;
+  z-index: 1;
 }
 
-.osf__rotate > span {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+@media (max-width: 1024px) {
+  .right__img > img {
+    bottom: -36px;
+  }
+>>>>>>> Avenger
+}
+
+.right__img::after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 90%;
+  background-color: #f5b096;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .right__img::after {
+    width: 70%;
+  }
 }
 
 .green__text {
   color: #1ABC9C;
 >>>>>>> Avenger
+}
+
+.pink__text {
+<<<<<<< HEAD
+=======
+  font-weight: bold;
+>>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
+  color: #ef7f6d;
 }
 
 .section-1 {

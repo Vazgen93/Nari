@@ -32,7 +32,7 @@ body {
     
 }
 .title{
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -49,6 +49,7 @@ body {
     .decor__font{
         display: flex;
         align-items: center;
+
       >  span{
             font-family: Serenity;
             font-style: normal;
@@ -65,9 +66,24 @@ body {
             font-style: normal;
             font-weight: normal;
             font-size: 35px;
-            line-height: 128.3%;
             text-transform: capitalize;
             color: #505050;
+        }
+        .decor__font-green{
+            color: $green-1;
+        }
+        .air{
+            width: 209px;
+            height: 99px;
+            position: absolute;
+            top: 50%;
+            right: 35%;
+            @media (max-width: 1440px){
+                &{
+                    right: 5%;
+                }
+            }
+           
         }
     }
     &__text{
@@ -77,12 +93,11 @@ body {
         bottom: -50px;
         position: absolute;
         
-        p{
+        > p{
             font-family: Monument Extended;
             font-style: normal;
             font-weight: normal;
-            font-size: 35px;
-            line-height: 128.3%;
+            font-size: 40px;
             text-transform: capitalize;
             color: #505050;
         }
@@ -112,6 +127,8 @@ body {
         position: absolute;
         left: 0;
         bottom: 0;
+
+        
     }
 
     > img{
@@ -120,31 +137,52 @@ body {
         z-index: 1;
        
     }
+    
 }
-.osf{
+.right__img{
+    width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-start;
-    margin: 0px 4px;
-   
-    > span{
-        display: block;
-        width: 4px;
-        height: 7px;
-        background-image: url(../images/icon/Vector.png);
-        background-size: contain;
-    }
-}
-.osf__rotate{
-    transform: rotate(180deg);
+    justify-content: flex-start;
+    position: relative;
     
-    >span{
-        transform: translateY(20px);
+    > img{
+        height: 100%;
+        position: absolute;
+        bottom: -50px;
+        z-index: 1;
+        @media (max-width: 1024px){
+            &{
+             bottom: -36px;
+              
+            }
+        }
+        
     }
+    &::after{
+        content: '';
+        display: block;
+        width: 80%;
+        height: 90%;
+        background-color: $background;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media (max-width: 1024px){
+            &{
+                width: 70%;
+              
+              
+            }
+        }
+        
+    }
+    
 }
 .green__text{
     color: $green-1;
 }
+<<<<<<< HEAD
 
 
 .button__style{
@@ -164,4 +202,8 @@ body {
         font-weight: bold;
         color: $btn-text-color;
     }
+=======
+.pink__text{
+    color: $btn-text-color;
+>>>>>>> Avenger
 }

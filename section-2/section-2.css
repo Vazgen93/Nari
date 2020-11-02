@@ -52,7 +52,7 @@ body {
 }
 
 .title {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,9 +99,26 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
-  line-height: 128.3%;
   text-transform: capitalize;
   color: #505050;
+}
+
+.title .decor__font .decor__font-green {
+  color: #1ABC9C;
+}
+
+.title .decor__font .air {
+  width: 209px;
+  height: 99px;
+  position: absolute;
+  top: 50%;
+  right: 35%;
+}
+
+@media (max-width: 1440px) {
+  .title .decor__font .air {
+    right: 5%;
+  }
 }
 
 .title__text {
@@ -114,12 +131,11 @@ body {
   position: absolute;
 }
 
-.title__text p {
+.title__text > p {
   font-family: Monument Extended;
   font-style: normal;
   font-weight: normal;
-  font-size: 35px;
-  line-height: 128.3%;
+  font-size: 40px;
   text-transform: capitalize;
   color: #505050;
 }
@@ -157,26 +173,55 @@ body {
   z-index: 1;
 }
 
-.osf {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 =======
 <<<<<<< HEAD
+=======
+.right__img {
+  width: 100%;
+=======
+.osf {
+>>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
+>>>>>>> Avenger
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+.right__img > img {
+  height: 100%;
+  position: absolute;
+  bottom: -50px;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .right__img > img {
+    bottom: -36px;
+  }
+=======
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 0px 4px;
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 >>>>>>> 204e9add0a6b6c594a2576b575fed205af147021
+>>>>>>> Avenger
+=======
 >>>>>>> Avenger
 }
 
@@ -186,23 +231,43 @@ body {
   height: 7px;
   background-image: url(../images/icon/Vector.png);
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-size: cover;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> Avenger
   background-size: contain;
+>>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
 }
 
-.osf__rotate {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.right__img::after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 90%;
+  background-color: #f5b096;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
+<<<<<<< HEAD
+@media (max-width: 1024px) {
+  .right__img::after {
+    width: 70%;
+  }
+=======
 .osf__rotate > span {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
+<<<<<<< HEAD
 =======
   background-size: cover;
 >>>>>>> 204e9add0a6b6c594a2576b575fed205af147021
+>>>>>>> Avenger
+=======
+>>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
 >>>>>>> Avenger
 }
 
@@ -210,6 +275,7 @@ body {
   color: #1ABC9C;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .button__style {
   font-family: Montserrat;
@@ -233,12 +299,12 @@ body {
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> Avenger
 .pink__text {
-  font-weight: bold;
   color: #ef7f6d;
 }
 
->>>>>>> 204e9add0a6b6c594a2576b575fed205af147021
 p {
   margin: 0;
 >>>>>>> Avenger
@@ -246,8 +312,6 @@ p {
 
 .section-2 {
   width: 100%;
-  height: 1278px;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,14 +326,13 @@ p {
 
 .section-2__coach {
   width: 100%;
-  height: 533px;
   -webkit-box-shadow: 0px 10px 15px rgba(80, 80, 80, 0.08);
           box-shadow: 0px 10px 15px rgba(80, 80, 80, 0.08);
+  margin-bottom: 56px;
 }
 
 .section-2__coach-text {
-  padding: 0 185px 0 98px;
-  border: 1px solid red;
+  padding: 0  98px 58px  185px;
 }
 
 .section-2__coach-text > p:first-child {
@@ -281,7 +344,7 @@ p {
   padding-top: 68px;
 }
 
-.section-2__coach-text > p:last-child {
+.section-2__coach-text-osf {
   font-family: Montserrat;
   font-style: italic;
   font-weight: normal;
@@ -291,9 +354,24 @@ p {
   padding-top: 50px;
 }
 
+.section-2__coach-text-osf .osf-left {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.section-2__coach-text-osf .osf-left > span {
+  width: 8px;
+  height: 13px;
+}
+
+.section-2__coach-text-osf .osf-right > span {
+  width: 8px;
+  height: 13px;
+}
+
 .section-2__hola {
   width: 100%;
-  height: 632px;
+  margin-top: 56px;
   background-color: #FAFAFA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,7 +441,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 29px 0 0 39px;
+  margin: 0  0  39px 29px;
 }
 
 .section-2__hola-air-title > img {
@@ -386,5 +464,23 @@ p {
 .section-2__hola-air > img {
   width: 461px;
   height: 692px;
+}
+
+@media (max-width: 1440px) {
+  .section-2__coach-text {
+    padding: 0  60px 28px  150px;
+  }
+  .section-2__title {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .section-2__coach-text {
+    padding: 0  20px 8px  80px;
+  }
+  .section-2__title {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=section-2.css.map */

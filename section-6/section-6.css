@@ -173,64 +173,12 @@ body {
   z-index: 1;
 }
 
-<<<<<<< HEAD
-.osf {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-=======
-=======
 .right__img {
   width: 100%;
->>>>>>> Avenger
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 0px 4px;
->>>>>>> Avenger
-}
-
-.osf > span {
-  display: block;
-  width: 4px;
-  height: 7px;
-  background-image: url(../images/icon/Vector.png);
-<<<<<<< HEAD
-  background-size: cover;
-}
-
-.green__text {
-  color: #1ABC9C;
-}
-
-.button__style {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 21px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.button__style a {
-  color: #FAFAFA;
-=======
-  background-size: contain;
-=======
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -248,7 +196,6 @@ body {
   .right__img > img {
     bottom: -36px;
   }
->>>>>>> Avenger
 }
 
 .right__img::after {
@@ -270,18 +217,33 @@ body {
 
 .green__text {
   color: #1ABC9C;
->>>>>>> Avenger
 }
 
 .pink__text {
-<<<<<<< HEAD
+<<<<<<< HEAD:section-6/section-6.css
+  color: #ef7f6d;
 =======
   font-weight: bold;
->>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
   color: #ef7f6d;
 }
 
-header {
+.section-3 {
+  width: 100%;
+>>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d:section-3/section-3.css
+}
+
+.section-6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-6__top {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,122 +251,123 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-header .logo > img {
-  width: 231px;
-  height: 55.87px;
+@media (max-width: 1024px) {
+  .section-6__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
-header .header__nav {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: 10px;
-}
-
-header .header__nav .header__ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .header__nav .header__li {
-  margin: 0px 30px;
-  position: relative;
-}
-
-header .header__nav .header__li::before {
-  content: '';
+.section-6__left {
   width: 100%;
-  height: 3px;
-  display: block;
-  position: absolute;
-  background-color: #333334;
-  bottom: -3px;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: .3s;
-  transition: .3s;
+  position: relative;
 }
 
-header .header__nav .header__li:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+@media (max-width: 1024px) {
+  .section-6__left {
+    width: 70%;
+  }
 }
 
-header .header__nav .header__li > a {
+.section-6 .left__desc {
+  width: 70%;
+  margin-top: 134px;
+}
+
+@media (max-width: 1024px) {
+  .section-6 .left__desc {
+    width: 50%;
+  }
+}
+
+.section-6 .left__desc > p {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 20px;
-  color: #333334;
+  font-weight: normal;
+  font-size: 28px;
+  margin: 100px 0;
+  letter-spacing: -0.02em;
+  color: #111111;
 }
 
-header .header__btn {
-  border: 3px solid #f42f2f;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 4px 15px rgba(237, 202, 178, 0.54);
-          box-shadow: 0px 4px 15px rgba(237, 202, 178, 0.54);
-  cursor: pointer;
-  position: relative;
-  -webkit-transition: .3s;
-  transition: .3s;
+@media (max-width: 1440px) {
+  .section-6 .left__desc > p {
+    margin: 50px 0;
+    font-size: 23px;
+  }
 }
 
-header .header__btn::before {
-  content: '';
-  display: block;
-  left: -25px;
-  top: -25px;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  z-index: 1;
-  background-image: url(../images/icon/decor-1.png);
-  background-size: cover;
+@media (max-width: 1024px) {
+  .section-6 .left__desc > p {
+    font-size: 22px;
+  }
 }
 
-header .header__btn:hover {
-  background-color: #f42f2f;
+@media (max-width: 768px) {
+  .section-6 .left__desc > p {
+    font-size: 18px;
+  }
 }
 
-header .header__btn:hover a {
-  color: #ffffff;
-}
-
-header .header__btn > a {
-  width: 214.98px;
-  height: 54.47px;
+.section-6__right {
+  width: 50%;
+  height: 830px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.section-6__right > .right__img img {
+  left: -217px;
+}
+
+@media (max-width: 1024px) {
+  .section-6__right > .right__img img {
+    width: 70%;
+    left: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-6__right {
+    width: 70%;
+    height: 665px;
+    position: absolute;
+    right: 29px;
+    top: 120px;
+  }
+}
+
+.section-6__bottom {
+  margin-top: 14px;
+}
+
+.section-6__bottom > p {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #f42f2f;
-  -webkit-transition: .3s;
-  transition: .3s;
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  color: #111111;
 }
-/*# sourceMappingURL=header.css.map */
+
+@media (max-width: 1440px) {
+  .section-6__bottom > p {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-6__bottom > p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-6__bottom > p {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=section-6.css.map */

@@ -1,0 +1,70 @@
+@import "../style/style.scss";
+
+footer{
+    width: 100%;
+    background-color:$header-link-color;
+}
+.footer{
+    width: 100%;
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    .footer__social{
+        width: 429px;
+        &-icons{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 17.5px;
+            &>p{
+                margin: 0;
+                font-family:Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: $white; 
+            }
+        }
+        &>p{
+            margin: 0;
+            font-family:Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: $white;
+            padding-top: 17.5px;
+        }
+
+    }
+    .footer__nav{
+        width: 60%;
+        .footer__ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+        .footer__li{
+            margin: 25px;
+            &>a{
+                font-family:Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: $white;
+                &:hover{
+                    transition: 0.5s;
+                    color: #ffffff81;
+                }
+            }  
+        }
+    }
+}
