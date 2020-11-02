@@ -220,6 +220,10 @@ body {
 }
 
 .pink__text {
+<<<<<<< HEAD
+=======
+  font-weight: bold;
+>>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
   color: #ef7f6d;
 }
 

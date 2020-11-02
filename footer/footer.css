@@ -52,7 +52,7 @@ body {
 }
 
 .title {
-  width: 100%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,26 +99,9 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
+  line-height: 128.3%;
   text-transform: capitalize;
   color: #505050;
-}
-
-.title .decor__font .decor__font-green {
-  color: #1ABC9C;
-}
-
-.title .decor__font .air {
-  width: 209px;
-  height: 99px;
-  position: absolute;
-  top: 50%;
-  right: 35%;
-}
-
-@media (max-width: 1440px) {
-  .title .decor__font .air {
-    right: 5%;
-  }
 }
 
 .title__text {
@@ -131,11 +114,12 @@ body {
   position: absolute;
 }
 
-.title__text > p {
+.title__text p {
   font-family: Monument Extended;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 35px;
+  line-height: 128.3%;
   text-transform: capitalize;
   color: #505050;
 }
@@ -173,46 +157,33 @@ body {
   z-index: 1;
 }
 
-.right__img {
-  width: 100%;
+.osf {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  position: relative;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0px 4px;
 }
 
-.right__img > img {
-  height: 100%;
-  position: absolute;
-  bottom: -50px;
-  z-index: 1;
-}
-
-@media (max-width: 1024px) {
-  .right__img > img {
-    bottom: -36px;
-  }
-}
-
-.right__img::after {
-  content: '';
+.osf > span {
   display: block;
-  width: 80%;
-  height: 90%;
-  background-color: #f5b096;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  width: 4px;
+  height: 7px;
+  background-image: url(../images/icon/Vector.png);
+  background-size: contain;
 }
 
-@media (max-width: 1024px) {
-  .right__img::after {
-    width: 70%;
-  }
+.osf__rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.osf__rotate > span {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
 }
 
 .green__text {
@@ -220,153 +191,103 @@ body {
 }
 
 .pink__text {
-<<<<<<< HEAD
-=======
   font-weight: bold;
->>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
   color: #ef7f6d;
 }
 
-.section-1 {
+footer {
   width: 100%;
-  height: 922px;
+  background-color: #333334;
+}
+
+.footer {
+  width: 100%;
+  padding: 45px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #f5b096;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-.section-1__title {
-  height: 271px;
-  padding-top: 55px;
-  font-family: Monument Extended;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 45px;
-  letter-spacing: 0.09em;
-  color: #505050;
-  position: relative;
-}
-
-.section-1__title::before {
-  content: '';
-  display: block;
-  width: 25%;
-  height: 3px;
-  position: absolute;
-  background-color: #ffffff;
-  bottom: 0;
-  left: -75px;
-}
-
-@media (max-width: 1440px) {
-  .section-1__title::before {
-    width: 55%;
-  }
-}
-
-.section-1__title-1 {
-  position: absolute;
-  left: -13px;
-}
-
-.section-1__title-2 {
-  font-size: 70px;
-  position: absolute;
-  left: 0px;
-  top: 71px;
-}
-
-.section-1__subtitle {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  color: #ffffff;
-}
-
-.section-1__btn {
-  width: 295.92px;
-  height: 71.4px;
-  background: #ffffff;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.section-1__btn > a {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer .footer__social {
+  width: 429px;
+}
+
+.footer .footer__social-icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 17.5px;
+}
+
+.footer .footer__social-icons > p {
+  margin: 0;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  color: #ef7f6d;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.section-1__btn:hover {
-  background-color: #ef7f6d;
-}
-
-.section-1__btn:hover a {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
   color: #ffffff;
 }
 
-.section-1__links {
-  padding-top: 100px;
+.footer .footer__social > p {
+  margin: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-top: 17.5px;
 }
 
-.section-1__links > a {
-  font-size: 30px;
-  color: white;
-  margin: 0 19px;
-  -webkit-transition: .3s;
-  transition: .3s;
+.footer .footer__nav {
+  width: 60%;
 }
 
-.section-1__links > a:first-child {
-  margin-left: 0;
-}
-
-.section-1__links > a:hover {
-  color: #ef7f6d;
-}
-
-.section-1__left {
-  width: 50%;
+.footer .footer__nav .footer__ul {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-left: 75px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
-.section-1__right {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.footer .footer__nav .footer__li {
+  margin: 25px;
 }
-/*# sourceMappingURL=section-1.css.map */
+
+.footer .footer__nav .footer__li > a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.footer .footer__nav .footer__li > a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #ffffff81;
+}
+/*# sourceMappingURL=footer.css.map */
