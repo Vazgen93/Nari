@@ -6,53 +6,67 @@
    
     &__top{
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        @media (max-width: 1024px){
-            &{
-                
-                flex-wrap: wrap;
-            }
-        }
     }
-    &__left{
-        width: 100%;  
+    &__content{
+        width: 100%;
+        display: flex;  
+        align-items: center;
+        justify-content: space-between;
         position: relative;
+
+
+        @media (max-width: 1024px){
+            &{
+                width: 100%;
+            }
+        } 
         @media (max-width: 1024px){
             &{
                 
-                width: 70%;
             }
         }   
     }
-    .left__desc{
-        width: 70%;
-        margin-top: 134px;
-        @media (max-width: 1024px){
+    .content__left{
+        width: 871px;
+        
+        @media (max-width: 1440px){
             &{
                 
-                width: 50%;
+                width: 635px;
             }
         }
-        > p{
+        @media (max-width: 1024px){
+            &{
+              
+                width: 471px;
+            }
+        }
+        @media (max-width: 768px){
+            &{
+                
+                width: 356px;
+                
+            }
+        }
+
+        > p {
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
             font-size: 28px;
-            margin: 100px 0;
             letter-spacing: -0.02em;
             color: $black-2;
-            
+
             @media (max-width: 1440px){
                 &{
-                    margin: 50px 0;
+                    
                     font-size: 23px;
                 }
             }
             @media (max-width: 1024px){
                 &{
-                    
-                    font-size: 22px;
+                  
+                   font-size: 22px;
                 }
             }
             @media (max-width: 768px){
@@ -63,48 +77,37 @@
             }
         }
     }
-    &__right{
-        width: 50%;
+    .content__right{
+        position: relative;
+        width: 966px;
         height: 830px;
-        display: flex;
-        @media (max-width: 1024px){
+
+        @media (max-width: 1440px){
             &{
-               width: 40%;
-               left: 0px;
+                
+                width: 795px;
+                height: 830px;
             }
         }
-        > .right__img{
-            img{
-                left: -217px;
-                @media (max-width: 1024px){
-                    &{
-                       width: 70%;
-                       left: 0px;
-                    }
-                }
-                @media (max-width: 768px){
-                    &{
-                       width: 70%;
-                       left: 0px;
-                    }
-                }
+        @media (max-width: 1024px){
+            &{
+              
+                width: 599px;
+                height: 665px;
 
             }
         }
-        @media (max-width: 1024px){
+        @media (max-width: 768px){
             &{
-              width: 70%;
-              height: 665px;
-              position: absolute;
-              right: 29px;
-              top: 120px;
+                
+                height: 612px;
             }
         }
-     
+
     }
+    
     &__bottom{
         margin-top: 14px;
-
         > p{
             font-family: Montserrat;
             font-style: normal;
@@ -120,7 +123,7 @@
             }
             @media (max-width: 1024px){
                 &{
-                    
+                  
                     font-size: 22px;
                 }
             }

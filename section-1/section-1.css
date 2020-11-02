@@ -173,12 +173,64 @@ body {
   z-index: 1;
 }
 
+<<<<<<< HEAD
+.osf {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+=======
+=======
 .right__img {
   width: 100%;
+>>>>>>> Avenger
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0px 4px;
+>>>>>>> Avenger
+}
+
+.osf > span {
+  display: block;
+  width: 4px;
+  height: 7px;
+  background-image: url(../images/icon/Vector.png);
+<<<<<<< HEAD
+  background-size: cover;
+}
+
+.green__text {
+  color: #1ABC9C;
+}
+
+.button__style {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button__style a {
+  color: #FAFAFA;
+=======
+  background-size: contain;
+=======
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -196,6 +248,7 @@ body {
   .right__img > img {
     bottom: -36px;
   }
+>>>>>>> Avenger
 }
 
 .right__img::after {
@@ -217,6 +270,7 @@ body {
 
 .green__text {
   color: #1ABC9C;
+>>>>>>> Avenger
 }
 
 .pink__text {
