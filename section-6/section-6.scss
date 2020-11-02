@@ -1,0 +1,124 @@
+@import "../style/style.scss";
+.section-6{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    &__top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1024px){
+            &{
+                
+                flex-wrap: wrap;
+            }
+        }
+    }
+    &__left{
+        width: 100%;  
+        position: relative;
+        @media (max-width: 1024px){
+            &{
+                
+                width: 70%;
+            }
+        }   
+    }
+    .left__desc{
+        width: 70%;
+        margin-top: 134px;
+        @media (max-width: 1024px){
+            &{
+                
+                width: 50%;
+            }
+        }
+        > p{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            margin: 100px 0;
+            letter-spacing: -0.02em;
+            color: $black-2;
+            
+            @media (max-width: 1440px){
+                &{
+                    margin: 50px 0;
+                    font-size: 23px;
+                }
+            }
+            @media (max-width: 1024px){
+                &{
+                    
+                    font-size: 22px;
+                }
+            }
+            @media (max-width: 768px){
+                &{
+                    
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    &__right{
+        width: 50%;
+        height: 830px;
+        display: flex;
+        > .right__img{
+            img{
+                left: -217px;
+                @media (max-width: 1024px){
+                    &{
+                        width: 70%;
+                       left: 0px;
+                    }
+                }
+
+            }
+        }
+        @media (max-width: 1024px){
+            &{
+              width: 70%;
+              height: 665px;
+              position: absolute;
+              right: 29px;
+              top: 120px;
+            }
+        }
+     
+    }
+    &__bottom{
+        margin-top: 14px;
+
+        > p{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            letter-spacing: -0.02em;
+            color: $black-2;
+            @media (max-width: 1440px){
+                &{
+                    
+                    font-size: 23px;
+                }
+            }
+            @media (max-width: 1024px){
+                &{
+                    
+                    font-size: 22px;
+                }
+            }
+            @media (max-width: 768px){
+                &{
+                    
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    
+}
