@@ -133,3 +133,17 @@ body {
 .green__text{
     color: $green-1;
 }
+
+.button__style{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        color: #FAFAFA;
+    }
+}
