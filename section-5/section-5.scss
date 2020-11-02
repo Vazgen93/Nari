@@ -7,15 +7,14 @@
     &__content{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 90px;
 
         .step__card{
-            width: 33.333%;
             height: 360px;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             position: relative;
 
             &::before{
@@ -24,32 +23,32 @@
                 position: absolute;
                 background-repeat: no-repeat;
                 background-size: contain;
-                
+                left: -50%;
             }
             &:nth-child(1){
+                width: 360px;
                 &::before{
                     width: 216px;
                     height: 184px;
-                    top: calc(50% - 130px);
-                    left: -100px;
+                    top: 15%;
                     background-image: url(../images/icon/step1.png);
                 }
             }
             &:nth-child(2){
+                width: 287px;
                 &::before{
                     width: 121px;
                     height: 123px;
-                    top: calc(50% - 123px);
-                    left: -80px;
+                    top: 25%;
                     background-image: url(../images/icon/step2.png);
                 }
             }
             &:nth-child(3){
+                width: 313px;
                 &::before{
                     width: 178px;
                     height: 103px;
-                    top: calc(50% - 103px);
-                    left: -60px;
+                    top: 25%;
                     background-image: url(../images/icon/step3.png);
                 }
             }
@@ -57,7 +56,7 @@
 
         
         .step__name{
-            width: 360px;
+            
             display: flex;
             margin: 29px 0;
             &::before {
@@ -99,7 +98,6 @@
             }
         }
         .step__desc{
-            width: 100%;
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
@@ -107,6 +105,71 @@
             line-height: 24px;
             letter-spacing: -0.02em;
             color: #5F5F5F;
+            @media (max-width: 1440px) {
+                &{
+                    font-size: 14px;
+                }
+            }
+            @media (max-width: 1024px) {
+                &{
+                    font-size: 11px;
+                }
+            }
+
+            &-1{
+                width: 360px;
+                @media (max-width: 1440px) {
+                    &{
+                        width: 210px;
+                    }
+                }
+                @media (max-width: 1024px) {
+                    &{
+                        width: 195px;
+                    }
+                }
+            }
+            &-2{
+                width: 287px;
+                @media (max-width: 1440px) {
+                    &{
+                        width: 195px;
+                    }
+                }
+                @media (max-width: 1024px) {
+                    &{
+                        width: 151px;
+                    }
+                }
+            }
+            &-3{
+                width: 165px;
+                @media (max-width: 1440px) {
+                    &{
+                        width: 131px;
+                    }
+                }
+                @media (max-width: 1024px) {
+                    &{
+                        width: 143px;
+                    }
+                }
+            }
+        }
+    }
+    &__desc{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 132%;
+        align-items: center;
+        letter-spacing: -0.02em;
+        color: #111111;
+        @media (max-width: 1440px) {
+            &{
+                font-size: 23px;
+            }
         }
     }
     

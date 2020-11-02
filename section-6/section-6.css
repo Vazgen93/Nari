@@ -249,31 +249,18 @@ body {
   color: #ef7f6d;
 }
 
-footer {
+.section-6 {
   width: 100%;
-  background-color: #333334;
-}
-
-.footer {
-  width: 100%;
-  padding: 45px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.footer .footer__social {
-  width: 429px;
-}
-
-.footer .footer__social-icons {
+.section-6__top {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,77 +268,123 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 17.5px;
 }
 
-.footer .footer__social-icons > p {
-  margin: 0;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #ffffff;
-}
-
-.footer .footer__social-icons > img {
-  cursor: pointer;
-}
-
-.footer .footer__social > p {
-  margin: 0;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #ffffff;
-  padding-top: 17.5px;
-}
-
-.footer .footer__nav {
-  width: 60%;
-}
-
-.footer .footer__nav .footer__ul {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-}
-
-.footer .footer__nav .footer__li {
-  margin: 25px;
-}
-
-.footer .footer__nav .footer__li > a {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #ffffff;
-}
-
-.footer .footer__nav .footer__li > a:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  color: #ffffff81;
-}
-
-@media (max-width: 1020px) {
-  .footer__social {
-    margin-top: 50px;
+@media (max-width: 1024px) {
+  .section-6__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
-/*# sourceMappingURL=footer.css.map */
+
+.section-6__left {
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .section-6__left {
+    width: 70%;
+  }
+}
+
+.section-6 .left__desc {
+  width: 70%;
+  margin-top: 134px;
+}
+
+@media (max-width: 1024px) {
+  .section-6 .left__desc {
+    width: 50%;
+  }
+}
+
+.section-6 .left__desc > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  margin: 100px 0;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+@media (max-width: 1440px) {
+  .section-6 .left__desc > p {
+    margin: 50px 0;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-6 .left__desc > p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-6 .left__desc > p {
+    font-size: 18px;
+  }
+}
+
+.section-6__right {
+  width: 50%;
+  height: 830px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-6__right > .right__img img {
+  left: -217px;
+}
+
+@media (max-width: 1024px) {
+  .section-6__right > .right__img img {
+    width: 70%;
+    left: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-6__right {
+    width: 70%;
+    height: 665px;
+    position: absolute;
+    right: 29px;
+    top: 120px;
+  }
+}
+
+.section-6__bottom {
+  margin-top: 14px;
+}
+
+.section-6__bottom > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+@media (max-width: 1440px) {
+  .section-6__bottom > p {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-6__bottom > p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-6__bottom > p {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=section-6.css.map */
