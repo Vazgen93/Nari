@@ -190,6 +190,11 @@ body {
   color: #1ABC9C;
 }
 
+.pink__text {
+  font-weight: bold;
+  color: #ef7f6d;
+}
+
 .section-4 {
   width: 100%;
   display: -webkit-box;
