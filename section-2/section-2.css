@@ -174,11 +174,19 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+=======
+<<<<<<< HEAD
+=======
 .right__img {
   width: 100%;
 =======
 .osf {
 >>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
+>>>>>>> Avenger
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,6 +214,15 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 0px 4px;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+>>>>>>> 204e9add0a6b6c594a2576b575fed205af147021
+>>>>>>> Avenger
+=======
+>>>>>>> Avenger
 }
 
 .osf > span {
@@ -213,6 +230,13 @@ body {
   width: 4px;
   height: 7px;
   background-image: url(../images/icon/Vector.png);
+<<<<<<< HEAD
+<<<<<<< HEAD
+  background-size: cover;
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Avenger
   background-size: contain;
 >>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
 }
@@ -237,19 +261,53 @@ body {
 .osf__rotate > span {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
+<<<<<<< HEAD
+=======
+  background-size: cover;
+>>>>>>> 204e9add0a6b6c594a2576b575fed205af147021
+>>>>>>> Avenger
+=======
 >>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
+>>>>>>> Avenger
 }
 
 .green__text {
   color: #1ABC9C;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+.button__style {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button__style a {
+  color: #FAFAFA;
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> Avenger
 .pink__text {
   color: #ef7f6d;
 }
 
 p {
   margin: 0;
+>>>>>>> Avenger
 }
 
 .section-2 {
