@@ -67,12 +67,24 @@
         width: 50%;
         height: 830px;
         display: flex;
+        @media (max-width: 1024px){
+            &{
+               width: 40%;
+               left: 0px;
+            }
+        }
         > .right__img{
             img{
                 left: -217px;
                 @media (max-width: 1024px){
                     &{
-                        width: 70%;
+                       width: 70%;
+                       left: 0px;
+                    }
+                }
+                @media (max-width: 768px){
+                    &{
+                       width: 70%;
                        left: 0px;
                     }
                 }
