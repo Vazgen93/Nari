@@ -26,18 +26,23 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  padding-top: 38px;
 }
 
 .wrapper {
   max-width: 1976px;
   height: 100%;
-  padding: 0 69px;
+  padding: 38px 69px 0px 69px;
 }
 
 @media (max-width: 1440px) {
   .wrapper {
     padding: 0 32px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    padding: 0 31px;
   }
 }
 
@@ -52,7 +57,7 @@ body {
 }
 
 .title {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,11 +92,22 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 104px;
-  line-height: 139.5%;
   text-align: center;
   letter-spacing: -0.02em;
   color: #ef7f6d;
   margin-right: 29px;
+}
+
+@media (max-width: 1024px) {
+  .title .decor__font > span {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title .decor__font > span {
+    font-size: 60px;
+  }
 }
 
 .title .decor__font > p {
@@ -99,9 +115,24 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
-  line-height: 128.3%;
   text-transform: capitalize;
   color: #505050;
+}
+
+@media (max-width: 1024px) {
+  .title .decor__font > p {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title .decor__font > p {
+    font-size: 28px;
+  }
+}
+
+.title .decor__font .decor__font-green {
+  color: #1ABC9C;
 }
 
 .title__text {
@@ -114,14 +145,47 @@ body {
   position: absolute;
 }
 
-.title__text p {
+@media (max-width: 1440px) {
+  .title__text {
+    bottom: -80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title__text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title__text {
+    font-size: 18px;
+  }
+}
+
+.title__text > p {
   font-family: Monument Extended;
   font-style: normal;
   font-weight: normal;
-  font-size: 35px;
-  line-height: 128.3%;
+  font-size: 40px;
   text-transform: capitalize;
   color: #505050;
+}
+
+@media (max-width: 1024px) {
+  .title__text > p {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title__text > p {
+    font-size: 36px;
+  }
+}
+
+.title__text .air {
+  margin-left: 20px;
 }
 
 .center__line::before {
@@ -157,41 +221,76 @@ body {
   z-index: 1;
 }
 
-.osf {
+.right__img {
+  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 0px 4px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
 }
 
-.osf > span {
+.right__img > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -50px;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .right__img > img {
+    width: 599px;
+    height: 665px;
+    bottom: -45px;
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .right__img > img {
+    width: 477px;
+    height: 530px;
+    bottom: -30px;
+  }
+}
+
+.right__img::after {
+  content: '';
   display: block;
-  width: 4px;
-  height: 7px;
-  background-image: url(../images/icon/Vector.png);
-  background-size: contain;
+  width: 60%;
+  height: 85%;
+  background-color: #f5b096;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-.osf__rotate {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+@media (max-width: 1440px) {
+  .right__img::after {
+    width: 60%;
+  }
 }
 
-.osf__rotate > span {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+@media (max-width: 1024px) {
+  .right__img::after {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right__img::after {
+    font-size: 18px;
+  }
 }
 
 .green__text {
   color: #1ABC9C;
 }
 
-<<<<<<< HEAD:section-3/section-3.css
-<<<<<<< HEAD
 .button__style {
   font-family: Montserrat;
   font-style: normal;
@@ -211,20 +310,15 @@ body {
 
 .button__style a {
   color: #FAFAFA;
-=======
-.section-3 {
-  width: 100%;
->>>>>>> Avenger
-=======
+}
+
 .pink__text {
-  font-weight: bold;
   color: #ef7f6d;
 }
 
 footer {
   width: 100%;
   background-color: #333334;
->>>>>>> Avenger:footer/footer.css
 }
 
 .footer {
@@ -242,9 +336,6 @@ footer {
           align-items: center;
 }
 
-<<<<<<< HEAD:section-3/section-3.css
-.section-3__block1__info p {
-=======
 .footer .footer__social {
   width: 429px;
 }
@@ -265,7 +356,6 @@ footer {
 
 .footer .footer__social-icons > p {
   margin: 0;
->>>>>>> Avenger:footer/footer.css
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -274,188 +364,6 @@ footer {
   color: #ffffff;
 }
 
-<<<<<<< HEAD:section-3/section-3.css
-.section-3__block1__info p:nth-child(1) {
-  color: #333334;
-}
-
-.section-3__block1__info p:nth-child(2) {
-  color: #111111;
-}
-
-.section-3__block1__info p span {
-  font-family: Monument Extended;
-  font-style: normal;
-  font-size: 46px;
-  line-height: 128.3%;
-}
-
-.section-3__block1-button {
-  margin-top: 54px;
-}
-
-.section-3__block1-button__btn {
-  width: 349.82px;
-  height: 88.72px;
-  background: #ef7f6d;
-}
-
-.section-3__block2 {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 113px;
-}
-
-.section-3__block2 > p {
-  width: 640px;
-  height: 74px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 132%;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #111111;
-  margin: 0 auto;
-}
-
-.section-3__block2 > p span {
-  color: #ef7f6d;
-}
-
-.section-3__block3 {
-  width: 100%;
-  height: 685px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  margin-top: 74px;
-}
-
-.section-3__block3__couchings {
-  width: 1460px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.section-3__block3__couching {
-  width: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.section-3__block3__couching .couching__info {
-  width: 400px;
-  height: 470px;
-  background: #FAFAFA;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  border: 2px solid #ECECEC;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: flex;
-  align-items: flex-end;
-}
-
-.section-3__block3__couching .couching__info .img-1 {
-  background-image: url(./couching_img/1.png);
-}
-
-.section-3__block3__couching .couching__info .img-2 {
-  background-image: url(./couching_img/2.png);
-}
-
-.section-3__block3__couching .couching__info .img-3 {
-  background-image: url(./couching_img/3.png);
-}
-
-.section-3__block3__couching .couching__img {
-  width: 283px;
-  height: 450px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-}
-
-.section-3__block3__couching .couching__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section-3__block3__couching .couching__title span:nth-child(1) {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-  color: #1ABC9C;
-}
-
-.section-3__block3__couching .couching__title span:nth-child(2) {
-  font-family: Montserrat;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 150.1%;
-  text-align: center;
-}
-
-.section-3__block3__couching .couching__title span:nth-child(3) {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #484848;
-}
-
-.section-3__block3__couching .couching__btn {
-  background: #1ABC9C;
-  width: 194px;
-  height: 66px;
-  margin: 24px  0 44px 0;
-=======
 .footer .footer__social > p {
   margin: 0;
   font-family: Montserrat;
@@ -502,6 +410,5 @@ footer {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #ffffff81;
->>>>>>> Avenger:footer/footer.css
 }
 /*# sourceMappingURL=footer.css.map */

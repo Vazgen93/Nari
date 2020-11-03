@@ -26,18 +26,23 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  padding-top: 38px;
 }
 
 .wrapper {
   max-width: 1976px;
   height: 100%;
-  padding: 0 69px;
+  padding: 38px 69px 0px 69px;
 }
 
 @media (max-width: 1440px) {
   .wrapper {
     padding: 0 32px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    padding: 0 31px;
   }
 }
 
@@ -87,11 +92,22 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 104px;
-  line-height: 139.5%;
   text-align: center;
   letter-spacing: -0.02em;
   color: #ef7f6d;
   margin-right: 29px;
+}
+
+@media (max-width: 1024px) {
+  .title .decor__font > span {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title .decor__font > span {
+    font-size: 60px;
+  }
 }
 
 .title .decor__font > p {
@@ -103,22 +119,20 @@ body {
   color: #505050;
 }
 
+@media (max-width: 1024px) {
+  .title .decor__font > p {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title .decor__font > p {
+    font-size: 28px;
+  }
+}
+
 .title .decor__font .decor__font-green {
   color: #1ABC9C;
-}
-
-.title .decor__font .air {
-  width: 209px;
-  height: 99px;
-  position: absolute;
-  top: 50%;
-  right: 35%;
-}
-
-@media (max-width: 1440px) {
-  .title .decor__font .air {
-    right: 5%;
-  }
 }
 
 .title__text {
@@ -131,6 +145,24 @@ body {
   position: absolute;
 }
 
+@media (max-width: 1440px) {
+  .title__text {
+    bottom: -80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title__text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title__text {
+    font-size: 18px;
+  }
+}
+
 .title__text > p {
   font-family: Monument Extended;
   font-style: normal;
@@ -138,6 +170,22 @@ body {
   font-size: 40px;
   text-transform: capitalize;
   color: #505050;
+}
+
+@media (max-width: 1024px) {
+  .title__text > p {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title__text > p {
+    font-size: 36px;
+  }
+}
+
+.title__text .air {
+  margin-left: 20px;
 }
 
 .center__line::before {
@@ -173,25 +221,12 @@ body {
   z-index: 1;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-=======
-<<<<<<< HEAD
-=======
 .right__img {
   width: 100%;
-=======
-.osf {
->>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
->>>>>>> Avenger
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -199,6 +234,7 @@ body {
 }
 
 .right__img > img {
+  width: 100%;
   height: 100%;
   position: absolute;
   bottom: -50px;
@@ -207,76 +243,54 @@ body {
 
 @media (max-width: 1024px) {
   .right__img > img {
-    bottom: -36px;
+    width: 599px;
+    height: 665px;
+    bottom: -45px;
+    right: 0;
   }
-=======
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 0px 4px;
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
->>>>>>> 204e9add0a6b6c594a2576b575fed205af147021
->>>>>>> Avenger
-=======
->>>>>>> Avenger
 }
 
-.osf > span {
-  display: block;
-  width: 4px;
-  height: 7px;
-  background-image: url(../images/icon/Vector.png);
-<<<<<<< HEAD
-<<<<<<< HEAD
-  background-size: cover;
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Avenger
-  background-size: contain;
->>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
+@media (max-width: 768px) {
+  .right__img > img {
+    width: 477px;
+    height: 530px;
+    bottom: -30px;
+  }
 }
 
 .right__img::after {
   content: '';
   display: block;
-  width: 80%;
-  height: 90%;
+  width: 60%;
+  height: 85%;
   background-color: #f5b096;
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-<<<<<<< HEAD
+@media (max-width: 1440px) {
+  .right__img::after {
+    width: 60%;
+  }
+}
+
 @media (max-width: 1024px) {
   .right__img::after {
-    width: 70%;
+    font-size: 22px;
   }
-=======
-.osf__rotate > span {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-<<<<<<< HEAD
-=======
-  background-size: cover;
->>>>>>> 204e9add0a6b6c594a2576b575fed205af147021
->>>>>>> Avenger
-=======
->>>>>>> 45a5518e87b5278fc0e9c6bf72a706a93046d19d
->>>>>>> Avenger
+}
+
+@media (max-width: 768px) {
+  .right__img::after {
+    font-size: 18px;
+  }
 }
 
 .green__text {
   color: #1ABC9C;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .button__style {
   font-family: Montserrat;
   font-style: normal;
@@ -296,18 +310,14 @@ body {
 
 .button__style a {
   color: #FAFAFA;
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> Avenger
+}
+
 .pink__text {
   color: #ef7f6d;
 }
 
 p {
   margin: 0;
->>>>>>> Avenger
 }
 
 .section-2 {
