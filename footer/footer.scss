@@ -13,6 +13,7 @@ footer{
     align-items: center;
     .footer__social{
         width: 429px;
+        font-size: 20px;
         &-icons{
             width: 100%;
             display: flex;
@@ -24,7 +25,6 @@ footer{
                 font-family:Montserrat;
                 font-style: normal;
                 font-weight: 600;
-                font-size: 20px;
                 line-height: 24px;
                 color: $white; 
             }
@@ -37,42 +37,69 @@ footer{
             font-family:Montserrat;
             font-style: normal;
             font-weight: 600;
-            font-size: 20px;
             line-height: 24px;
             color: $white;
             padding-top: 17.5px;
         }
 
     }
-    .footer__nav{
-        width: 60%;
-        .footer__ul{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding: 0;
-            margin: 0;
-        }
-        .footer__li{
-            margin: 25px;
-            &>a{
-                font-family:Montserrat;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 24px;
-                color: $white;
-                &:hover{
-                    transition: 0.5s;
-                    color: #ffffff81;
-                }
-            }  
-        }
+    
+}
+.footer__nav{
+    width: 60%;
+    font-size: 20px;
+    .footer__ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+    .footer__li{
+        margin: 25px;
+        &>a{
+            font-family:Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            color: $white;
+            &:hover{
+                transition: 0.5s;
+                color: #ffffff81;
+            }
+        }  
     }
 }
-@media (max-width:1020px){
-   .footer__social{
-       margin-top: 50px;
+@media (max-width:1440px){
+   .footer__li>a{
+       font-size: 16px;
    }
+   .footer__social{
+       font-size: 16px;
+   }
+}
+@media (max-width:1024px){
+    .footer__social{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .footer__ul{
+        justify-content: center;
+    }
+    .footer__li>a{
+        font-size: 14px;
+    }
+    .footer__social>p{
+        font-size: 14px;
+    }
+    .footer__social-icons>p{
+        font-size: 14px;
+    }
+ }
+ 
+@media (max-width:480px){
+    .footer__nav{
+        width: 100%;
+    }
 }

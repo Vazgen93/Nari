@@ -1,0 +1,254 @@
+@import "../style/style.scss";
+
+.section-7{
+    width: 100%;
+    padding-bottom: 50px;
+    &__title{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &>p{
+            margin: 0;
+            margin-top: 50px;
+            font-family: Serenity;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 110px;
+            line-height: 139.5%;
+            text-align: center;
+            letter-spacing: -0.02em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #EF7F6D;
+        }
+        &>span{
+            font-family: Monument Extended;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 39px;
+            line-height: 47px;
+            text-align: center;
+            letter-spacing: -0.02em;
+            color: #333334;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 224px;
+                height: 2px;
+                border-radius: 1px;
+                background-color: #000000;
+                left: -280px;
+                top: 22px;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                width: 224px;
+                height: 2px;
+                border-radius: 1px;
+                background-color: #000000;
+                left: 591px;
+                top: 22px;
+            }
+        }
+    }    
+    &__main{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 80px;
+
+    }
+    .section-7__price{
+        width: 462px;
+        height: 976px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid #ECECEC;
+        box-sizing: border-box;
+        padding: 66px 6px 39px 7px;
+        @media (max-width:768px){
+            &{
+                width: 100%;
+            }
+        }
+        &-title{
+            width: 100%;
+            font-family:Montserrat;
+            font-style: normal;
+            text-align: center;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            &>p{
+                margin: 0;
+            }
+            &>p:first-child{
+                font-weight: 900;
+                font-size: 44px;
+                line-height: 139.5%;
+                letter-spacing: -0.02em;
+                color: #EF7F6D;
+            }
+            &>p:nth-child(2){
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 183%;
+                letter-spacing: 0.5em;
+                color: #767676;
+                margin: 13px 0;
+            }
+            &>p:nth-child(3){
+                font-weight: normal;
+                font-size: 28px;
+                line-height: 150%;
+                text-transform: lowercase;
+                color: #333334;
+            }
+            &>p:last-child{
+                font-weight: bold;
+                font-size: 43px;
+                line-height: 52px;
+                letter-spacing: -0.02em;
+                color: #1ABC9C;
+                margin-top: 46px;
+                &>span{
+                    font-weight: normal;
+                }
+            }
+        }
+        .first-price-text{
+            margin-top: 53px;
+            &>p:last-child{
+                border-bottom: none;
+            }
+        }
+        .center-price-text{
+            margin-top: 38px;
+            &>p:last-child{
+                border-bottom: none;
+            }
+        }
+        .last-price-text{
+            margin-top: 63px;
+        }
+        .section-7__price-text{
+            width: 100%;
+
+            font-family:Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 21px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: -0.02em;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #3D3D3D; 
+            @media (max-width:1024px){
+                &{
+                    font-size: 16px;
+                }
+            }
+            &>p{
+                margin: 0;
+                padding: 25px 0;
+                border-bottom: 1px solid #EAEAEA;
+                border-top: 1px solid #EAEAEA;
+            
+            }
+        }
+        button{
+            background: #EF7F6D;
+            border: none;
+            padding: 22px 17.5px;
+            @media (max-width:768px){
+                &{
+                    padding: 22px 80px;
+                }
+            }
+            @media (max-width:480px){
+                &{
+                    
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .center-price{
+        border: 5px solid #EF7F6D;
+        box-shadow: 0px 4px 20px rgba(235, 235, 235, 0.5);
+        @media (max-width:768px){
+            &{
+                border: 2px solid #ECECEC;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px){
+    .section-7__title{
+        &>p{
+            font-size: 80px;
+        }
+        &>span{
+            font-size:  35px;
+            font-weight: normal;
+        }
+        &>span::after{
+            width: 120px;
+            left: -149px;
+        }
+        &>span::before{
+            width: 120px;
+            left: 505px;
+        }
+    }
+}
+@media (max-width:768px){
+    .section-7__main{
+        flex-wrap: wrap;
+    }
+    .section-7__title{
+        &>p{
+            font-size: 60px;
+        }
+        &>span{
+            font-size:  28px;
+            font-weight: normal;
+        }
+        &>span::after{
+            width: 93px;
+            left: -120px;
+        }
+        &>span::before{
+            width: 93px;
+            left: 408px;
+        }
+    }
+}
+@media (max-width:480px){
+    .section-7__title{
+        &>p{
+            margin: 0;
+            text-align: left;
+            font-size: 60px;
+            transform: translateX(-66px) translateY(25px);
+        }
+        &>span{
+            font-size:  20px;
+            text-align: left;
+            font-weight: normal;
+        }
+        &>span::after{
+            width: 72.5px;
+            left: -86px;
+            top: -1px;
+        }
+        &>span::before{
+            display: none;
+        }
+    }
+}
