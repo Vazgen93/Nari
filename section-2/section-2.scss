@@ -30,19 +30,10 @@ p{
                 line-height: 140%;
                 text-align: center;
                 padding-top: 50px;
-
-                .osf-left{
-                    transform: translateY(10px);
-                    &>span{
-                        width: 8px;
-                        height: 13px;
-                    }
-                }
-                .osf-right{
-                    &>span{
-                        width: 8px;
-                        height: 13px;
-                    }
+                .osf-icon{
+                    color: #8FC1B4;
+                    font-size: 16px;
+                    
                 }
             }
         }
@@ -53,13 +44,13 @@ p{
         background-color: #FAFAFA;
         display: flex;
         justify-content: space-around;
-        align-items: center;    
+        align-items: center; 
+        padding: 80px 0;   
         &-text{
             width: 582px;
-            height: 380px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            align-items: flex-start;
             >img{
               width: 337.56px;
             }
@@ -71,13 +62,25 @@ p{
                 line-height: 132%;
                 // color: #111111;
                 margin: 0;
+                padding: 60px 0;
+            }
+            &>button{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 17px;
+                line-height: 21px;
+                color: #FFFFFF;
+                background: #EF7F6D;
+                border: none;
+                padding: 34px 121px;
             }
         }
         &-air{
-            width: 730px;
+            width: 588px;
             height: 470px;
-            background:linear-gradient(to right,$btn-text-color 0 587px,transparent 587px);
-            transform:translateY(162px) translateX(100px);
+            background: #F5B096;
+            transform:translateY(162px);
             display: flex;
             justify-content: space-between;
             align-items: flex-end;

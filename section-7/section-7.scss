@@ -169,6 +169,12 @@
                     padding: 22px 80px;
                 }
             }
+            @media (max-width:480px){
+                &{
+                    
+                    width: 100%;
+                }
+            }
         }
     }
     .center-price{
