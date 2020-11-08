@@ -1,34 +1,126 @@
-@import "../style/style.scss";
+@import "../style/_var.scss";
+
 
 header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .logo{
-    
+    margin: 45px 0;
+    position: relative;
+  
+    .burger{
+        cursor: pointer;
+        width: 23px;
+        height: 20px;
+        position: absolute;
+        right: 13px;
+        z-index: 10;
+        display: none;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        @media (max-width: $ipade) {
+            &{
+             display: block;
+             
+            }
+         }
         
-        > img{
+    }
+    // .overlay{
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background-color: rgba(245, 176, 150,.9);
+    //     z-index: 2;
+    //     transition: .5s;
+    //     transform-origin: right top;
+    //     transform: scale(0);
+    // }
+    
+    .logo{
+        margin-top: -10px;
+        display: flex;
+        align-items: center;
+        @media (max-width: $ipadePro) {
+            &{
+                width: 170px;
+                height: 41px;
+                
+            }
+        }
+         img{
             width: 231px;
+            width: 100%;
             height: 55.87px;
+            
         }
     }
     .header__nav{
         width: 60%;
+        height: 55px;
         display: flex;
         justify-content: flex-end;
-        margin-top: 10px;
-        // @media (max-width: 1440px) {
-        //     &{
-        //      width: 60%;
-        //     }
-        //  }
+        align-items: center;
+        transition: .5s;
+        transform-origin: right top;
+        z-index: 5;
+       
+        @media (max-width: $ipadePro) {
+            &{
+             width: 45%;
+    
+            }
+         }
+         @media (max-width: $ipade) {
+            &{
+             width: 50%;
+             position: absolute;
+             height: auto;
+             background-color: $top-bg;
+             top: 0;
+             right: 0;
+             padding: 0px 50px;
+             transform: scale(0);
+            }
+         }
+         
         .header__ul{
             display: flex;
+            @media (max-width: $ipade) {
+                &{
+                 flex-direction: column;
+                
+                }
+             }
         }
         .header__li{
             margin: 0px 30px;
             position: relative;
+            @media (max-width: $ipadePro) {
+                &{
+                    margin: 0px 12.5px;
+                }
+            
+            }
+            @media (max-width: $ipade) {
+                &{
+                    margin: 10px 0;
+                    // padding: 30px 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .3s;
+                    &:hover{
+                        background-color: $btn-text-color;
+                    }
+                
+                }
+            }
 
             &::before{
                 content: '';
@@ -53,17 +145,38 @@ header {
             text-transform: uppercase;
             line-height: 20px;
             color: $header-link-color;
+
+                @media (max-width: $ipadePro) {
+                    &{
+                        font-size: 14px;
+                    }
+                }
+                @media (max-width: $ipade) {
+                    &{
+                        font-size: 20px;
+                        color:$green-1;
+                    
+                    }
+                }
             }
         }
     }
+    .showeMenu{
+        transform: scale(1);
+    }
     .header__btn{
-         
         border: 3px solid $header-btn-color;
         box-sizing: border-box;
         box-shadow: 0px 4px 15px rgba(237, 202, 178, 0.54);
         cursor: pointer;
         position: relative;
         transition: .3s;
+       
+        @media (max-width: $ipade) {
+            &{
+                margin-right: 60px;
+            }
+        }
         &::before{
             content: '';
             display: block;
@@ -72,7 +185,7 @@ header {
             width: 50px;
             height: 50px;
             position: absolute;
-            z-index: 1;
+            
             background-image: url(../images/icon/decor-1.png);
             background-size: cover;
         }
@@ -97,8 +210,13 @@ header {
             text-transform: uppercase;
             color: $header-btn-color;
             transition: .3s;
+            @media (max-width: $ipadePro) {
+                &{
+                    width: 180px;
+                    height: 46px;
+                }
+            }
         }
         
     }
 }
-

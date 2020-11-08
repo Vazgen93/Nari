@@ -1,115 +1,292 @@
-@import "../style/style.scss";
+@import "../style/_var.scss";
 
-.section-1{
-    width: 100%;
-    height: 922px;
+.section-1 {
+  width: 100%;
+  height: 922px;
+  display: flex;
+  background-color: $silver-1;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  perspective: 500px;
+  @media (max-width: $desktop) {
+  }
+  @media (max-width: $ipadePro) {
+    justify-content: flex-start;
+  }
+  @media (max-width: $ipade) {
+  }
+  @media (max-width: $mobile) {
+    // flex-direction: column;
+  }
+
+  &__left {
+    height: 100%;
+    padding-left: 147px;
+    @media (max-width: $desktop) {
+      padding-left: 57px;
+    }
+    @media (max-width: $ipadePro) {
+      padding-left: 26px;
+    }
+    @media (max-width: $ipade) {
+      width: 322px;
+    }
+    @media (max-width: $mobile) {
+    //   width: 80%;
+      padding-left: 17px;
+    }
+  }
+  &__title {
+    width: 460px;
+    height: 271px;
     display: flex;
-    background-color: $background;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    
+    @media (max-width: $ipadePro) {
+      padding-left: 59px;
+    }
+    @media (max-width: $ipade) {
+    }
+    @media  (max-width: $mobile) {
+        height: 200px;
+    }
 
-    &__title{
-        height: 271px;
-        padding-top: 55px;
-        font-family: Monument Extended;
-        font-style: normal;
-        font-weight: normal;
+  
+    &::after {
+      content: "";
+      display: block;
+      width: 302px;
+      height: 2px;
+      position: absolute;
+      background-color: $white;
+      left: -147px;
+      bottom: 0;
+    }
+
+    &-1 {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      font-family: Monument Extended;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 45px;
+      letter-spacing: 0.09em;
+      text-transform: capitalize;
+      color: $black-3;
+      font-family: Monument Extended;
+      @media (max-width: $ipadePro) {
+        font-size: 40;
+      }
+      @media (max-width: $ipade) {
+        font-size: 30px;
+      }
+    }
+    &-2 {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      font-family: Monument Extended;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 70px;
+      text-transform: capitalize;
+      color: $black-3;
+      @media (max-width: $ipadePro) {
+        font-size: 60;
+        justify-content: flex-start;
+        padding-left: 19px;
+      }
+      @media (max-width: $ipade) {
         font-size: 45px;
-        letter-spacing: 0.09em;
-        color: $text-color-1;
-        position: relative;
-        &::before{
-            content: '';
-            display: block;
-            width: 25%;
-            height: 3px;
-            position: absolute;
-            background-color: $white;
-            bottom: 0;
-            left: -75px;
-            @media (max-width: 1440px){
-                &{
-                    width: 55%;
-                }
-            }
-        }
-        &-1{
-            position: absolute;  
-            left: -13px;
-        }
-        &-2{
-            font-size: 70px;  
-            position: absolute;  
-            left: 0px;
-            top: 71px;  
-        }
-
+      }
     }
-    &__subtitle{
-        width: 100%;
+  }
+  &__text-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $green-1;
+    height: 77px;
+    padding-left: 33px;
+
+    > p {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      text-transform: uppercase;
+      color: $white;
+      @media (max-width: $desktop) {
+        font-size: 25px;
+      }
+      @media (max-width: $ipadePro) {
+        font-size: 20px;
+      }
+      @media (max-width: $ipade) {
+      }
+      @media (max-width: $mobile) {
+        font-size: 17px;
+      }
+    }
+  }
+  .text-block-1 {
+    width: 800px;
+    margin-top: 71px;
+    @media (max-width: $desktop) {
+      width: 680px;
+    }
+    @media (max-width: $ipadePro) {
+      width: 477px;
+    }
+    @media (max-width: $ipade) {
+      width: 322px;
+    }
+    @media (max-width: $mobile) {
+    
+      font-size: 17px;
+    }
+  }
+  .text-block-2 {
+    width: 663px;
+    margin-top: 8px;
+    @media (max-width: $desktop) {
+      width: 595px;
+    }
+    @media (max-width: $ipadePro) {
+      width: 421px;
+    }
+    @media (max-width: $ipade) {
+      width: 295px;
+    }
+    @media (max-width: $mobile) {
+      width: 70%;
+    }
+
+    > p {
+      font-size: 30px;
+      @media (max-width: $desktop) {
+        font-size: 25px;
+      }
+      @media (max-width: $ipadePro) {
+        font-size: 17px;
+      }
+      @media (max-width: $ipade) {
+      }
+      @media (max-width: $mobile) {
+        font-size: 15px;
+      }
+    }
+  }
+  &__btn {
+    transform-style: preserve-3d;
+    margin: 62px 0px 0px 10px;
+    > a {
+      width: 218px;
+      height: 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: $green-1;
+      border-radius: 24px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: $white;
+      position: relative;
+      padding-right: 10px;
+      transition: 0.3s;
+      @media (max-width: $ipade) {
+        font-size: 16px;
+      }
+      &:hover {
+        box-shadow: -5px 10px 15px #00000050;
+        transform: translateZ(10px) translateX(10px);
+      }
+
+      &::before {
+        content: "";
+        width: 47px;
+        height: 40px;
         display: flex;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 50px;
-        color: $white;
-        
+        background-color: $white;
+        border-radius: 24px;
+        margin-left: -25px;
+        background-image: url(../images/icon/bell.png);
+        background-repeat: no-repeat;
+        background-size: 18px 20px;
+        background-position: center;
+        animation: anim 0.5s;
+        transition: 0.3s;
+      }
+    }
+  }
+  &__links {
+    margin-top: 192px;
+
+    > a {
+      font-size: 24px;
+      margin: 5px;
+      color: $black-3;
+      margin: 0px 19px;
+
+     
+      @media (max-width: $mobile) {
+      &{
+          font-size: 12px;
+          margin: 9px;
+      }
+      
+       
+    
+      }
+    }
+    @media (max-width: $mobile) {
+        position: absolute;
+        bottom: 42px;
+    }
+  }
+  &__right {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    @media (max-width: $desktop) {
+      position: relative;
     }
 
-    &__btn{
-        width: 295.92px;
-        height: 71.4px;
-        background: $white;
-        transition: .3s;
-       
-        > a{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 17px;
-            color: $btn-text-color;
-            transition: .3s;
-        }
-        &:hover{
-            background-color: $btn-text-color;
-        }
-        &:hover a{
-            color: $white;
-        }
+    > img {
+      width: 720px;
+      height: 878px;
+      margin-right: -26px;
+      @media (max-width: $desktop) {
+        position: absolute;
+        right: 0;
+      }
+      @media (max-width: $ipadePro) {
+        width: 560px;
+        height: 731px;
+        position: absolute;
+        margin: 0;
+        left: -100px;
+      }
+      @media (max-width: $ipade) {
+        width: 500px;
+        height: 653px;
+        margin-right: -16px;
+      }
+
+      @media (max-width: $mobile) {
+        width: 314px;
+        height: 463px;
+        left: -180px;
+      }
     }
     
-    &__links{
-        padding-top: 100px;
-        > a{
-
-            font-size: 30px;
-            color: white;
-            margin: 0 19px;
-            transition: .3s;
-            &:first-child{
-                margin-left: 0;
-            }
-            &:hover{
-                color: $btn-text-color; 
-            }
-        }
-        
-    }
-
-    &__left{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 75px;
-    }
-    &__right{
-        width: 50%;
-        display: flex;
-        justify-content: flex-end;
-    }
+  }
 }

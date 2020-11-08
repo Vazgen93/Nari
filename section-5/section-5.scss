@@ -3,11 +3,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    
    
     &__content{
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 90px;
 
         .step__card{
@@ -17,40 +18,16 @@
             align-items: flex-start;
             position: relative;
 
-            &::before{
-                content: '';
-                display: block;
-                position: absolute;
-                background-repeat: no-repeat;
-                background-size: contain;
-                left: -50%;
-            }
             &:nth-child(1){
-                width: 360px;
-                &::before{
-                    width: 216px;
-                    height: 184px;
-                    top: 15%;
-                    background-image: url(../images/icon/step1.png);
-                }
+                width: 449px;
             }
             &:nth-child(2){
-                width: 287px;
-                &::before{
-                    width: 121px;
-                    height: 123px;
-                    top: 25%;
-                    background-image: url(../images/icon/step2.png);
-                }
+                width: 406px;
+            
             }
             &:nth-child(3){
                 width: 313px;
-                &::before{
-                    width: 178px;
-                    height: 103px;
-                    top: 25%;
-                    background-image: url(../images/icon/step3.png);
-                }
+        
             }
         }
 
@@ -86,6 +63,7 @@
         }
         .step__title{
             margin-bottom: 12px;
+           
             > span {
                 font-family: Montserrat;
                 font-style: normal;
@@ -98,6 +76,7 @@
             }
         }
         .step__desc{
+            
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
@@ -117,7 +96,7 @@
             }
 
             &-1{
-                width: 360px;
+                width: 449px;
                 @media (max-width: 1440px) {
                     &{
                         width: 210px;
@@ -130,7 +109,7 @@
                 }
             }
             &-2{
-                width: 287px;
+                width: 406px;
                 @media (max-width: 1440px) {
                     &{
                         width: 195px;
@@ -143,7 +122,7 @@
                 }
             }
             &-3{
-                width: 165px;
+                width: 201px;
                 @media (max-width: 1440px) {
                     &{
                         width: 131px;
@@ -166,6 +145,9 @@
         align-items: center;
         letter-spacing: -0.02em;
         color: #111111;
+        >p {
+            padding-bottom: 30px;
+        }
         @media (max-width: 1440px) {
             &{
                 font-size: 23px;
