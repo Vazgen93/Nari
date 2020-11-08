@@ -6,23 +6,19 @@
 }
 
 body {
-    width: 100wh;
+    width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+    padding-top: 38px;
 }
 .wrapper{
     max-width: 1976px;
     height: 100%;
     padding: 0 69px;
+
     @media (max-width: 1440px) {
         &{
          padding: 0 32px;
-        }
-     }
-
-     @media (max-width: 580px) {
-        &{
-         padding: 0 0px;
         }
      }
     .container{
@@ -30,35 +26,6 @@ body {
         width: 100%;
         margin: 0 auto;
     }
-}
-.top{
-    width: 100%;
-    height: 92px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $top-bg;
-    @media  (max-width: $mobile) {
-        padding:54px 29px ;
-    }
-    >p{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 25px;
-        color: $white;
-        text-align: center;
-        
-          @media  (max-width: $mobile) {
-              font-size: 22px;
-              
-          }
-            span{
-                font-weight: bold;
-                color: $btn-text-color;
-            }
-        }
-    
 }
 .bold{
     font-weight: bold;
@@ -70,7 +37,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     position: relative;
- 
 
     &::before{
         content: '';
@@ -79,36 +45,21 @@ body {
         height: 2px;
         background-color: $black;
         margin-right: 32px;
-        background-color: red;
     }
     .decor__font{
         display: flex;
         align-items: center;
-       
 
       >  span{
             font-family: Serenity;
             font-style: normal;
             font-weight: normal;
             font-size: 104px;
+            line-height: 139.5%;
             text-align: center;
             letter-spacing: -0.02em;
             color: $btn-text-color;
             margin-right: 29px;
-           
-            @media (max-width: $ipadePro){
-                &{
-                  
-                    font-size: 80px;
-                }
-            }
-            @media (max-width: $ipade){
-                &{
-                    
-                    font-size: 60px;
-                }
-            }
-            
         }
         >p{
            font-family: Monument Extended;
@@ -117,24 +68,23 @@ body {
             font-size: 35px;
             text-transform: capitalize;
             color: #505050;
-            
-            @media (max-width: $ipadePro){
-                &{
-                  
-                    font-size: 36px;
-                }
-            }
-            @media (max-width: $ipade){
-                &{
-                    
-                    font-size: 28px;
-                }
-            }
         }
         .decor__font-green{
             color: $green-1;
         }
-        
+        .air{
+            width: 209px;
+            height: 99px;
+            position: absolute;
+            top: 50%;
+            right: 35%;
+            @media (max-width: 1440px){
+                &{
+                    right: 5%;
+                }
+            }
+           
+        }
     }
     &__text{
         width: 100%;
@@ -142,25 +92,6 @@ body {
         left: 128px;
         bottom: -50px;
         position: absolute;
-        @media (max-width: 1440px){
-            &{
-                
-                bottom: -80px;
-                
-            }
-        }
-        @media (max-width: $ipadePro){
-            &{
-              
-                font-size: 22px;
-            }
-        }
-        @media (max-width: $ipade){
-            &{
-                
-                font-size: 18px;
-            }
-        }
         
         > p{
             font-family: Monument Extended;
@@ -169,21 +100,6 @@ body {
             font-size: 40px;
             text-transform: capitalize;
             color: #505050;
-            @media (max-width: $ipadePro){
-                &{
-                  
-                    font-size: 35px;
-                }
-            }
-            @media (max-width: $ipade){
-                &{
-                    
-                    font-size: 36px;
-                }
-            }
-        }
-        .air{
-            margin-left: 20px;
         }
     }
 
@@ -191,11 +107,6 @@ body {
 .center__line{
     &::before{
         margin-top: 55px;         
-    }
-}
-.bottom__line{
-    &::before{
-        margin-top: 120px;         
     }
 }
 
@@ -236,26 +147,14 @@ body {
     position: relative;
     
     > img{
-        width: 100%;
         height: 100%;
         position: absolute;
         bottom: -50px;
         z-index: 1;
-        @media (max-width: $ipadePro){
+        @media (max-width: 1024px){
             &{
-             width: 599px;
-             height: 665px;
-             bottom: -45px;
-             right: 0;
-             
-            }
-        }
-        @media (max-width: $ipade){
-            &{
-                
-                width: 477px;
-                height: 530px;
-                bottom: -30px;
+             bottom: -36px;
+              
             }
         }
         
@@ -263,37 +162,27 @@ body {
     &::after{
         content: '';
         display: block;
-        width: 60%;
-        height: 85%;
+        width: 80%;
+        height: 90%;
         background-color: $background;
         position: absolute;
         right: 0;
         bottom: 0;
-        @media (max-width: 1440px){
+        @media (max-width: 1024px){
             &{
-                
-                width: 60%;
-            }
-        }
-        @media (max-width: $ipadePro){
-            &{
+                width: 70%;
               
-                font-size: 22px;
+              
             }
         }
-        @media (max-width: $ipade){
-            &{
-                
-                font-size: 18px;
-            }
-        }
-
+        
     }
     
 }
 .green__text{
     color: $green-1;
 }
+
 
 
 .button__style{
@@ -309,8 +198,12 @@ body {
         color: #FAFAFA;
     }
 
-}
-.pink__text{
-   
-    color: $btn-text-color;
+    .pink__text{
+        font-weight: bold;
+        color: $btn-text-color;
+    }
+
+    // .pink__text{
+    //     color: $btn-text-color;
+    // }
 }
